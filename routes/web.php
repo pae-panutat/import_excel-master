@@ -18,11 +18,15 @@ Route::get('/', 'ImportExcelController@index')->name('index');
 Route::get('/import_excel', 'ImportExcelController@index')->name('import_excel');
 Route::post('/import_excel/import', 'ImportExcelController@import');
 
+
 // ------------------------ delete ------------------------- //
 Route::get('import_excel/{importID}','ImportExcelController@importDelete')->name('importDelete');
+
+
 // ------------------------ insert ------------------------ //
 Route::post('importInsert','ImportExcelController@importInsert')->name('importInsert');
-// ------------------------ update ------------------------ //
 
+
+// ------------------------ update ------------------------ //
 Route::post('importUpdate','ImportExcelController@importUpdate')->name('importUpdate');
 
